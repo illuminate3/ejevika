@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5829d6517aeb1350c104b4ed8f92a2a0",
+    "hash": "9965a7614bf73b463870bb89c21a082f",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -78,6 +78,52 @@
             ],
             "description": "A redacted port of Underscore.js for PHP",
             "time": "2013-01-17 23:07:04"
+        },
+        {
+            "name": "arrilot/laravel-widgets",
+            "version": "2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Arrilot/laravel-widgets.git",
+                "reference": "75bb70ac8c7edeaea028de2cd224fe3ed22db646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Arrilot/laravel-widgets/zipball/75bb70ac8c7edeaea028de2cd224fe3ed22db646",
+                "reference": "75bb70ac8c7edeaea028de2cd224fe3ed22db646",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Arrilot\\Widgets\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nekrasov Ilya",
+                    "email": "nekrasov.ilya90@gmail.com"
+                }
+            ],
+            "description": "This package provides widget functionality to boost your Laravel views. It also includes asynchronous widgets, reloadable widgets, generator and etc.",
+            "homepage": "https://github.com/Arrilot/laravel-widgets",
+            "keywords": [
+                "ajax",
+                "laravel",
+                "widgets"
+            ],
+            "time": "2015-05-30 09:54:29"
         },
         {
             "name": "classpreloader/classpreloader",

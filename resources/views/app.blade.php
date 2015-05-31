@@ -134,64 +134,8 @@
 <div class="wrapper">
 	<main class="content">
 		<div class="content-center">
-			<!--start componet goods list on main page-->
-			<div class="goods-list">
-				<ul class="good-item">
-					<li class="goods-mini-img"><img src="images/mini-img.png"></li>
-					<li class="good-item-name"><a href="">Салат</a></li>
-				</ul>
-				
-				<ul class="good-item">
-					<li class="goods-mini-img"><img src="images/mini-img.png"></li>
-					<li class="good-item-name"><a href="">Салат</a></li>
-				</ul>
-				
-				<ul class="good-item">
-					<li class="goods-mini-img"><img src="images/mini-img.png"></li>
-					<li class="good-item-name"><a href="">Салат</a></li>
-				</ul>
-				
-				<ul class="good-item">
-					<li class="goods-mini-img"><img src="images/mini-img.png"></li>
-					<li class="good-item-name"><a href="">Салат</a></li>
-				</ul>
-				
-				<ul class="good-item">
-					<li class="goods-mini-img"><img src="images/mini-img.png"></li>
-					<li class="good-item-name"><a href="">Салат</a></li>
-				</ul>
-				
-				<ul class="good-item">
-					<li class="goods-mini-img"><img src="images/mini-img.png"></li>
-					<li class="good-item-name"><a href="">Салат</a></li>
-				</ul>
-				
-				<ul class="good-item">
-					<li class="goods-mini-img"><img src="images/mini-img.png"></li>
-					<li class="good-item-name"><a href="">Салат</a></li>
-				</ul>
-				
-				<ul class="good-item">
-					<li class="goods-mini-img"><img src="images/mini-img.png"></li>
-					<li class="good-item-name"><a href="">Салат</a></li>
-				</ul>
-				
-				<ul class="good-item">
-					<li class="goods-mini-img"><img src="images/mini-img.png"></li>
-					<li class="good-item-name"><a href="">Салат</a></li>
-				</ul>
-				
-				<ul class="good-item">
-					<li class="goods-mini-img"><img src="images/mini-img.png"></li>
-					<li class="good-item-name"><a href="">Салат</a></li>
-				</ul>
-				
-				<ul class="good-item">
-					<li class="goods-mini-img"><img src="images/mini-img.png"></li>
-					<li class="good-item-name"><a href="">Салат</a></li>
-				</ul>
-			</div>
-			<!--end component goods list on main page-->
+			@widget('SectionList')
+			@yield('content')
 		</div>
 	</main><!-- .content -->
 

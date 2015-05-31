@@ -8,7 +8,8 @@
 		"laravel/framework": "5.0.*",
 		"kalnoy/nestedset": "^2.4",
 		"sleeping-owl/admin": "dev-development",
-		"vespakoen/menu": "^3.0"
+		"vespakoen/menu": "^3.0",
+		"arrilot/laravel-widgets": "^2.6"
 		
 	},
 	"require-dev": {

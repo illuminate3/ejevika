@@ -145,6 +145,7 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 		'SleepingOwl\Admin\AdminServiceProvider',
+		'Arrilot\Widgets\ServiceProvider',
 
 	],
 
@@ -202,6 +203,8 @@ return [
 		'AdminForm'     => 'SleepingOwl\Admin\Form\AdminForm',
 		'AdminTemplate' => 'SleepingOwl\Admin\Templates\Facade\AdminTemplate',
 		'FormItem'      => 'SleepingOwl\Admin\FormItems\FormItem',
+		'Widget'       => 'Arrilot\Widgets\Facade',
+		'AsyncWidget'  => 'Arrilot\Widgets\AsyncFacade',
 
 	],
 
