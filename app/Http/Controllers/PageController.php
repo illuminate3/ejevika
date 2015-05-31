@@ -11,8 +11,6 @@ class PageController extends Controller {
 	 * return mixed
 	 */
 	public function index(Catalog $catalog){
-		
-		
 
 		return view('pages.index');
 	}

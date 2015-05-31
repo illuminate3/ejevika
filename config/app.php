@@ -146,6 +146,7 @@ return [
 		'App\Providers\RouteServiceProvider',
 		'SleepingOwl\Admin\AdminServiceProvider',
 		'Arrilot\Widgets\ServiceProvider',
+		'Menu\MenuServiceProvider',
 
 	],
 
@@ -205,6 +206,7 @@ return [
 		'FormItem'      => 'SleepingOwl\Admin\FormItems\FormItem',
 		'Widget'       => 'Arrilot\Widgets\Facade',
 		'AsyncWidget'  => 'Arrilot\Widgets\AsyncFacade',
+		'Menu' => 'Menu\Menu',
 
 	],
 
