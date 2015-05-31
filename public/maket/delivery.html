@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu-web:300,400,700,500italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="style.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="http://jek-fdrv.16mb.com/pixp/pixp.js" type="text/javascript"></script>
+	
+</head>
+
+<body>
+
+<div class="top-menu-wrapper">
+	<menu class="top-menu">	
+		<div class="auth-block">
+			<!--start component auth-->
+			<a class="auth-ico"><img src="images/auth-ico.png"><span>Авторизация</span></a>
+			<!--end component auth-->
+		</div>	
+		<div class="order-table">
+			<!--start component order table-->
+				<a class="order-ico"><img src="images/order-ico.png"><span>Забронировать столик</span></a>
+			<!--end component auth-->
+		</div>
+		<div class="back-call">
+			<!--start component back call-->
+				<a class="back-call-ico"><img src="images/phone-ico.png"><span>Заказать обратный звонок</span></a>
+			<!--end component back call-->
+		</div>
+		<div class="cart-block">
+			<!--start component cart-->
+				<a class="cart-ico">Карзина</a>
+			<!--end component cart-->
+		</div>
+	</menu>
+</div>
+<div class="header-wrapper">
+	<header class="header">
+		<section class="top-info">
+			<div class="header-left">
+				<a href="/"><img src="images/logo.png"></a>
+			</div>
+			<div class="header-center">
+				<span class="devis">Зарядись энергией ягод</span>
+			</div>
+			<div class="header-right">
+				<div class="table-row">
+					<div class="table-cell">
+						<!--start include area-->
+							<span>Доставка ежедневно</span><br><span class="info-time">8:00 - 24:00</span>
+						<!--end include aread-->
+					</div>
+					<div class="table-cell">
+						<ul class="social-ico">
+							<li><a class="vk-ico" href="#"></a></li>
+							<li><a class="fb-ico" href="#"></a></li>
+							<li><a class="tw-ico" href="#"></a></li>
+							<li><a class="inst-ico" href="#"></a></li>
+							<li><a class="ok-ico" href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">
+						<!--start include area-->
+							<span>г. Краснодар ул. <br>Краснодармейская 33/1</span>
+						<!--end include area-->
+					</div>
+					<div class="table-cell">
+						<span class="phone-number">+7(918) 123-45-67</span>
+					</div>
+				</div>
+			</div>
+		</section>
+	</header><!-- .header-->
+</div>
+<div class="catalog-menu-wrapper">
+	<!--start component catalog menu-->
+	<nav class="catalog-menu">
+		<ul>
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Акции</a></li>
+			<li><a href="#">Бонусная программа</a></li>
+			<li><a href="#">Доставка блюд</a></li>
+			<li><a href="#">Отзывы</a></li>
+			<li><a href="#">Кафе-бар "Ежевика"</a></li>
+		</ul>
+		<div class="search-wrapper">
+			<!--start component search-->
+				<input type="text"><input type="submit" value="">
+			<!--end component search-->
+		</div>
+	</nav>
+	<!--end component catalog menu-->
+</div>
+<div class="wrapper">
+	<main class="content second-page">
+		<!--start component bread crumbs-->
+			<div class="bread-crumbs">
+
+			</div>
+		<!--end component bread crumbs-->
+		
+		<!--section head-->
+		<h1 class="section-head">Загаловок раздела</h1>
+		<!--start component left menu-->
+		<div class="left-menu">
+			<ul>
+				<li><a href="#">Салат из всякой хрени которая под рукой</a></li>
+				<li><a href="#">Салат</a></li>
+				<li><a href="#">Салат</a></li>
+				<li><a href="#">Салат</a></li>
+				<li><a href="#">Салат</a></li>
+			</ul>
+		</div>
+		<!--end component left mentu-->
+		<div class="content-center">
+			<!--start info delivery static-->
+			<div class="delivery-info block-table">
+				<div class="block-row row-1">
+					<div class="block-cell cell-1"></div>
+					<div class="block-cell cell-2">Прием заказов на сайте</div>
+					<div class="block-cell cell-3">Доставка блюд</div>
+				</div>
+
+				<div class="block-row row-2">
+					<div class="block-cell cell-4">Понидельник-пятница</div>
+					<div class="block-cell cell-5">Круглосуточно</div>
+					<div class="block-cell cell-6">8:00-24:00</div>
+				</div>
+
+				<div class="block-row row-3">
+					<div class="block-cell cell-7">Суббота - воскресенье</div>
+					<div class="block-cell cell-8">Круглосуточно</div>
+					<div class="block-cell cell-9">10:00-23:00</div>
+				</div>
+			</div>
+			<!--end info delivery static-->
+
+			<!--start yandex map with zone marker for delivery-->
+				<div class="map-section">
+					<div class="ya-map-wrapper">
+						<div id="map" style="width: 792px; height: 422px"></div>
+						        <ul>
+						        	<li><span class="zone-descr">Зона бесплатной доставки</span></li>
+						        	<li><span class="zone-descr2">Зона платной доставки (150 Р)</span></li>
+						        </ul>
+					</div>
+					   <p class="descr-map">
+						        	Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение форм развития. Задача организации, в особенности же дальнейшее развитие различных форм деятельности позволяет оценить значение существенных финансовых и административных условий. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Товарищи! сложившаяся структура организации играет важную роль в формировании форм развития. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий играет важную роль в формировании форм развития. С другой стороны консультация с широким активом играет важную роль в формировании направлений прогрессивного развития. 
+						</p>
+				</div>
+				<div class="map-section">
+					<div class="ya-map-wrapper map2">
+						<div id="map2" style="width: 792px; height: 422px"></div>
+					</div>
+				</div>
+			<!--end yandex map with zone marker for delivery-->
+
+			<!--******ya map script************************************-->
+			<script type="text/javascript">
+						        ymaps.ready(init);
+						        var myMap, 
+						            myPlacemark;
+
+						        function init(){ 
+						            myMap = new ymaps.Map("map", {
+						                center: [55.76, 37.64],
+						                zoom: 7
+						            }); 
+						            
+						            myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+						                hintContent: 'Москва!',
+						                balloonContent: 'Столица России'
+						            });
+						            
+						            myMap.geoObjects.add(myPlacemark);
+
+						            /*******map 2******/
+						            myMap2 = new ymaps.Map("map2", {
+						                center: [55.76, 37.64],
+						                zoom: 7
+						            }); 
+						            
+						            myPlacemark2 = new ymaps.Placemark([55.76, 37.64], {
+						                hintContent: 'Москва!',
+						                balloonContent: 'Столица России'
+						            });
+						            
+						            myMap.geoObjects.add(myPlacemark2);
+						        }
+			</script>
+			<!--********************************************************-->
+		</div>
+	</main><!-- .content -->
+
+</div><!-- .wrapper -->
+<footer>
+	<div class="footer-wrapper">
+		<div class="footer-left">
+			<span>
+				      ООО “Эврис”, 2014<br>
+					info@ejevikacafe.ru<br>
+					Публичная оферта
+			</span>
+		</div>
+		<div class="footer-center">
+			<ul class="social-ico">
+				<li><a class="vk-bottom-ico" href="#"></a></li>
+				<li><a class="fb-bottom-ico" href="#"></a></li>
+				<li><a class="tw-bottom-ico" href="#"></a></li>
+				<li><a class="inst-bottom-ico" href="#"></a></li>
+				<li><a class="ok-bottom-ico" href="#"></a></li>
+			</ul>
+			<span>г. Краснодар, ул. Красноармейская 33/1</span>
+		</div>
+		<div class="footer-right">
+			<span>Создание сайта:</span><a href=""> ALIENS.PRO<br>
+						Информация о проекте
+			</a>
+		</div>
+	</div>
+</footer>
+	
+
+</body>
+</html>
