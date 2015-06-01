@@ -10,8 +10,8 @@ class AppServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function boot()
-	{
-		app_path('repo/menu.php');
+	{	
+		
 	}
 
 	/**

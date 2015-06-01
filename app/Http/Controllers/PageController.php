@@ -10,8 +10,8 @@ class PageController extends Controller {
 	/*
 	 * return mixed
 	 */
-	public function index(Catalog $catalog){
-
+	public function index(){
+		
 		return view('pages.index');
 	}
 

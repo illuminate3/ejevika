@@ -17,6 +17,10 @@ class Catalog extends Model {
 	public function getSlugAttribute($value){
 		return $this->path.$value;
 	}
+
+	public function products(){
+		return $this->hasMany('App\Model\Product');
+	}
 	
 
 }

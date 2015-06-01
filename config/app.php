@@ -144,6 +144,7 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
+		'App\Providers\MenuServiceProvider',
 		'SleepingOwl\Admin\AdminServiceProvider',
 		'Arrilot\Widgets\ServiceProvider',
 		'Menu\MenuServiceProvider',
