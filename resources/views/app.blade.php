@@ -8,8 +8,11 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<link href="/css/style.css" rel="stylesheet">
+	<link href="/css/jquery.fancybox.css" rel="stylesheet">
 	<script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="/js/slider.js"></script>
+	<script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="/js/app.js"></script>
 	
 </head>
 
@@ -19,17 +22,17 @@
 	<menu class="top-menu">	
 		<div class="auth-block">
 			<!--start component auth-->
-			<a class="auth-ico"><img src="images/auth-ico.png"><span>Авторизация</span></a>
+			<a class="auth-ico"><img src="/images/auth-ico.png"><span>Авторизация</span></a>
 			<!--end component auth-->
 		</div>	
 		<div class="order-table">
 			<!--start component order table-->
-				<a class="order-ico"><img src="images/order-ico.png"><span>Забронировать столик</span></a>
+				<a class="order-ico"><img src="/images/order-ico.png"><span>Забронировать столик</span></a>
 			<!--end component auth-->
 		</div>
 		<div class="back-call">
 			<!--start component back call-->
-				<a class="back-call-ico"><img src="images/phone-ico.png"><span>Заказать обратный звонок</span></a>
+				<a class="back-call-ico"><img src="/images/phone-ico.png"><span>Заказать обратный звонок</span></a>
 			<!--end component back call-->
 		</div>
 		<div class="cart-block">
@@ -43,7 +46,7 @@
 	<header class="header">
 		<section class="top-info">
 			<div class="header-left">
-				<a href="/"><img src="images/logo.png"></a>
+				<a href="/"><img src="/images/logo.png"></a>
 			</div>
 			<div class="header-center">
 				<span class="devis">Зарядись энергией ягод</span>
@@ -175,7 +178,7 @@
 		</div>
 	</div>
 </footer>
-	
+	@yild('js')
 
 </body>
 </html>

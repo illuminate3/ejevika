@@ -17,7 +17,7 @@ Route::get('catalog/{product}','ProductController@index');
 Route::bind('product',function($slug){
 	return App\Model\Catalog::where('slug','=',$slug)->first()->products()->get();
 });
-Route::get('home', 'HomeController@index');
+
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
