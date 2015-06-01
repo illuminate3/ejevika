@@ -34,5 +34,10 @@ class AuthController extends Controller {
 
 		$this->middleware('guest', ['except' => 'getLogout']);
 	}
+	
+	public function getLogin_ajax(){
+		
+		return view('auth.auth_ajax');
+	}
 
 }

@@ -22,7 +22,7 @@
 	<menu class="top-menu">	
 		<div class="auth-block">
 			<!--start component auth-->
-			<a class="auth-ico"><img src="/images/auth-ico.png"><span>Авторизация</span></a>
+			<a class="auth-ico" id="auth-run"><img src="/images/auth-ico.png"><span>Авторизация</span></a>
 			<!--end component auth-->
 		</div>	
 		<div class="order-table">
