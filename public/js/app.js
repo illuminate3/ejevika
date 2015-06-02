@@ -1,5 +1,6 @@
 /*auth component*/
 $(document).ready(function(){
+/*top auth menu ajax authinticat*/	
 	$('#auth-run').click(function(){
 		 $.fancybox({
 		        width: 400,
@@ -39,7 +40,18 @@ $(document).ready(function(){
 		        }
 		    });
 	});
-	
+/*****************************************/
 	
 });
+
+var ejevika = function(){
+	
+	return {
+		'eventBind':function(){
+			$('#to-cart').click(function(){
+				
+			})
+		}
+	}
+}
 /*end auth componten*/
