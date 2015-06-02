@@ -39,5 +39,7 @@ $(document).ready(function(){
 		        }
 		    });
 	});
+	
+	
 });
 /*end auth componten*/

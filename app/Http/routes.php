@@ -22,4 +22,5 @@ Route::bind('product',function($slug){
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
+	'cart'=>'CartController',
 ]);

@@ -22,7 +22,7 @@
 	<menu class="top-menu">	
 		<div class="auth-block">
 			<!--start component auth-->
-			<a class="auth-ico" id="auth-run"><img src="/images/auth-ico.png"><span>Авторизация</span></a>
+			@widget('UserLink')
 			<!--end component auth-->
 		</div>	
 		<div class="order-table">
@@ -101,7 +101,7 @@
 	</nav>
 	<!--end component catalog menu-->
 </div>
-@widget('slider')
+@widget('Slider')
 <div class="wrapper">
 	<main class="content @if(Request::path()!=='/') second-page @endif">
 		<div class="left-menu">

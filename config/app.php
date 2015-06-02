@@ -148,6 +148,8 @@ return [
 		'SleepingOwl\Admin\AdminServiceProvider',
 		'Arrilot\Widgets\ServiceProvider',
 		'Menu\MenuServiceProvider',
+		'Barryvdh\Debugbar\ServiceProvider',
+		'Gloudemans\Shoppingcart\ShoppingcartServiceProvider',
 
 	],
 
@@ -208,6 +210,9 @@ return [
 		'Widget'       => 'Arrilot\Widgets\Facade',
 		'AsyncWidget'  => 'Arrilot\Widgets\AsyncFacade',
 		'Menu' => 'Menu\Menu',
+		'Debugbar' => 'Barryvdh\Debugbar\Facade',
+		'Cart'            => 'Gloudemans\Shoppingcart\Facades\Cart',
+
 
 	],
 
