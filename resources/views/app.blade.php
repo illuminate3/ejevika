@@ -7,6 +7,7 @@
 	<title></title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
+	<meta name="token" content="{{csrf_token()}}">
 	<link href="/css/style.css" rel="stylesheet">
 	<link href="/css/jquery.fancybox.css" rel="stylesheet">
 	<script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
@@ -178,7 +179,7 @@
 		</div>
 	</div>
 </footer>
-	@yild('js')
+	@yield('js')
 
 </body>
 </html>

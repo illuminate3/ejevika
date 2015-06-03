@@ -20,7 +20,7 @@ class CartController extends Controller {
 	
 	public function postAdd(){
 		
-		$product = Product::find($this->request()->input('id'))->first();
+		$product = Product::find($this->request->input('id'))->first();
 		if(!$product->count())
 			return 'this product not finde';
 		
@@ -28,12 +28,15 @@ class CartController extends Controller {
 	}
 	
 	public function getShow(){
-		//dd(Cart::content());
+		
+		$result = Cart::content();
+		
 		if($this->request->ajax()){
 			return 'ajax';
 		}else{
-			return 'no ajax';
+			return view('cart.index',compact('result'));
 		}
 	}
+	
 
 }

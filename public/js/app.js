@@ -1,5 +1,6 @@
 /*auth component*/
 $(document).ready(function(){
+	ejevika.eventBind();	
 /*top auth menu ajax authinticat*/	
 	$('#auth-run').click(function(){
 		 $.fancybox({
@@ -44,14 +45,32 @@ $(document).ready(function(){
 	
 });
 
-var ejevika = function(){
+var ejevika = (function(){
 	
 	return {
 		'eventBind':function(){
-			$('#to-cart').click(function(){
+			$('body').click(function(e){
+				var elem = $(e.target);
 				
+				/***buy btn button click***/
+				if(elem.hasClass('buy-btn')){
+					var id = elem.data('id');
+					var count = elem.parents('.product').find('product-count').val();
+					$.ajax({
+						method:'post',
+						url:'/cart/add',
+						data:{
+							'id':id,
+							'count':count,
+						},
+	        			 beforeSend: function(request) {
+	        			        return request.setRequestHeader('X-CSRF-Token',  $('meta[name="token"]').attr('content'));
+	        			 }
+					});
+				}
+					
 			})
 		}
 	}
-}
+})();
 /*end auth componten*/
