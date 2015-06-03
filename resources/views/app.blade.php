@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu-web:300,400,700,500italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	
 	<title></title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />

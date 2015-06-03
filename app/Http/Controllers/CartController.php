@@ -13,24 +13,29 @@ class CartController extends Controller {
 
 	protected $request;
 
+	
 	public function __construct(Request $request){
 
 		$this->request = $request;	
 	}
 	
 	public function postAdd(){
+		$count = ($this->request->input('count'))?$this->request->input('count'):1;
+		$id = $this->request->input('id');
+		$product = Product::where('id','=',$id)->first();
 		
-		$product = Product::find($this->request->input('id'))->first();
 		if(!$product->count())
 			return 'this product not finde';
 		
-		Cart::add($product->id,$product->name,1,$product->price);
+		Cart::add(
+				$product->id,
+				$product->name,
+				$count,
+				$product->price);
 	}
 	
 	public function getShow(){
-		
 		$result = Cart::content();
-		
 		if($this->request->ajax()){
 			return 'ajax';
 		}else{
@@ -38,5 +43,9 @@ class CartController extends Controller {
 		}
 	}
 	
+	public function postRemove(){
+		$cartItemId = $this->request->input('id');
+		Cart::remove($cartItemId);
+	}
 
 }

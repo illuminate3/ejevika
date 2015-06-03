@@ -46,29 +46,42 @@ $(document).ready(function(){
 });
 
 var ejevika = (function(){
+	var add = '/cart/add';
+	var remove = '/cart/remove';
+	var send = function(url,data){
+		$.ajax({
+			method:'post',
+			'url':url,
+			'data':data,
+			 beforeSend: function(request) {
+			        return request.setRequestHeader('X-CSRF-Token',  $('meta[name="token"]').attr('content'));
+			 }
+		});
+	};
 	
 	return {
 		'eventBind':function(){
 			$('body').click(function(e){
-				var elem = $(e.target);
-				
-				/***buy btn button click***/
+				var elem = $(e.target);	
+				var id = elem.data('id');
+				var count = elem.parents('ul').find('#product-count').val();
+/*******************buy btn button click**********************/
 				if(elem.hasClass('buy-btn')){
-					var id = elem.data('id');
-					var count = elem.parents('.product').find('product-count').val();
+					send(add,{'id':id,'count':count});
+				}
+				if(elem.hasClass('order-del')){
 					$.ajax({
 						method:'post',
-						url:'/cart/add',
-						data:{
-							'id':id,
-							'count':count,
-						},
-	        			 beforeSend: function(request) {
-	        			        return request.setRequestHeader('X-CSRF-Token',  $('meta[name="token"]').attr('content'));
-	        			 }
-					});
+						'url':remove,
+						'data':{'id':id},
+						 beforeSend: function(request) {
+						        return request.setRequestHeader('X-CSRF-Token',  $('meta[name="token"]').attr('content'));
+						 } 			 
+					}).done(function(){
+						 elem.parents('.box-row').remove();
+					 });
 				}
-					
+
 			})
 		}
 	}
