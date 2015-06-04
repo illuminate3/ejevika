@@ -1,0 +1,1 @@
+<a class="cart-ico">Всего товаров:{{$count}} на сумму {{$total}}</a>

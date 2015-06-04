@@ -38,7 +38,7 @@
 		</div>
 		<div class="cart-block">
 			<!--start component cart-->
-				<a class="cart-ico">Карзина</a>
+				@widget('CartMini')
 			<!--end component cart-->
 		</div>
 	</menu>
