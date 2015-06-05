@@ -209,6 +209,7 @@ return [
 		'FormItem'      => 'SleepingOwl\Admin\FormItems\FormItem',
 		'Widget'       => 'Arrilot\Widgets\Facade',
 		'AsyncWidget'  => 'Arrilot\Widgets\AsyncFacade',
+		'AjaxWidget'  => 'Arrilot\Widgets\AjaxFacade',
 		'Menu' => 'Menu\Menu',
 		'Debugbar' => 'Barryvdh\Debugbar\Facade',
 		'Cart'            => 'Gloudemans\Shoppingcart\Facades\Cart',

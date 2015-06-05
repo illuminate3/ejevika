@@ -23,4 +23,5 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 	'cart'=>'CartController',
+	'order'=>'OrderController'
 ]);

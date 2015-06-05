@@ -2271,9 +2271,6 @@ footer {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab1847', endColorstr='#26020a',GradientType=0 ); /* IE6-8 */
 	 border-radius: 10px;
     display: block;
-    margin: 145px auto auto;
-    padding-left: 45px;
-    padding-right: 45px;
     width: 812px;
 }
 

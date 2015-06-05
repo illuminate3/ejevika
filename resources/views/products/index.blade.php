@@ -10,7 +10,7 @@
 				<li><span class="price-item">230</span></li>
 				<li class="cart-catalog-input">
 					<span class="count-minus"></span>
-					<span><input id="product-count" type="text"></span></input>
+					<span><input id="product-count" type="text" value='1'></span></input>
 					<span class="count-plus"></span>
 				</li>
 				<li><button data-id="{{$product->id}}" class="buy-btn">в корзину</button></li>

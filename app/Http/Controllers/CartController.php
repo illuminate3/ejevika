@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Facade;
 use Session;
 use App\Model\Product;
 use Illuminate\Http\Request;
-
+use Widget;
 use Cart;
 
 class CartController extends Controller {
@@ -37,7 +37,7 @@ class CartController extends Controller {
 	public function getShow(){
 		$result = Cart::content();
 		if($this->request->ajax()){
-			return 'ajax';
+			return view('cart.index',compact('result'));
 		}else{
 			return view('cart.index',compact('result'));
 		}
@@ -46,6 +46,11 @@ class CartController extends Controller {
 	public function postRemove(){
 		$cartItemId = $this->request->input('id');
 		Cart::remove($cartItemId);
+	}
+	
+	public function getMini(){
+		
+		return Widget::run('CartMini');
 	}
 
 }

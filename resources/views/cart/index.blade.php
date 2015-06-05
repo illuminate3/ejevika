@@ -1,6 +1,3 @@
-@extends('app')
-@section('content')
-
 <div id="order-form">
 	<div id="order-form-close"></div>
 	<span class="order-heard">Корзина</span>
@@ -30,6 +27,7 @@
 Вы можете добавить себе дополнительные порции. Дополнительные палочки бесплатно. 
 		</p>
 	</div>
+	<!--
 	<div class="addon-items">
 		<h2>Дополнение к вашему заказу</h2>
 			<div id="order-slider" class="bottom-colum">
@@ -55,6 +53,7 @@
 			<a href='javascript: void(0)' class='next_slide2' class='arrows'></a>
 		</div>
 	</div>
+-->
 	<div class="bottom-order box-row">
 		<div class="bottom-order-left box">
 			<span class="order-bonus-0"></span>
@@ -67,4 +66,3 @@
 		</div>
 	</div>
 </div>
-@stop
